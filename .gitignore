@@ -1,0 +1,11 @@
+dev/
+.vscode/
+.ipynb_checkpoints/
+__pycache__
+*.png
+*.jpeg
+Pipfile.lock
+*.onnx
+*.tfvars
+*.terraform*
+.DS_Store
