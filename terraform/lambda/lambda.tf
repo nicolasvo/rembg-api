@@ -6,8 +6,8 @@ resource "aws_cloudwatch_log_group" "rembg" {
 
 resource "aws_lambda_function" "rembg" {
   function_name = "rembg"
-  memory_size   = 6000
-  timeout       = 300
+  memory_size   = 10240
+  timeout       = 900
   package_type  = "Image"
   architectures = ["x86_64"]
   image_uri     = "${data.terraform_remote_state.ecr.outputs.repository_url_rembg}:${var.image_tag_rembg}"
